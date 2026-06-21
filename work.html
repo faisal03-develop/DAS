@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Work — DAS | Design Aura Studio</title>
+  <meta name="description" content="Explore our portfolio of photorealistic 3D architectural renderings, interior visualizations, and design models across residential, commercial, and cultural projects.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <div class="preloader" id="preloader"><div class="preloader-logo">DAS</div></div>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a><a href="work.html">Work</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+  </div>
+
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">DAS<span>Design Aura Studio</span></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="work.html" class="active">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <a href="contact.html" class="nav-cta">Start a Project</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="section-tag">Portfolio</div>
+      <h1>Our Work</h1>
+      <p>A comprehensive showcase of 3D renderings, visualizations, and architectural models crafted for clients across the globe.</p>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="section">
+    <div class="container">
+      <div class="filter-bar reveal">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="commercial">Commercial</button>
+        <button class="filter-btn" data-filter="residential">Residential</button>
+        <button class="filter-btn" data-filter="interior">Interior</button>
+        <button class="filter-btn" data-filter="cultural">Cultural</button>
+        <button class="filter-btn" data-filter="hospitality">Hospitality</button>
+      </div>
+
+      <div class="projects-grid" id="portfolioGrid">
+
+        <div class="project-card featured reveal" data-category="commercial">
+          <img src="assets/images/project-tower.png" alt="Azure Commercial Tower rendering">
+          <div class="project-info">
+            <div class="project-category">Commercial</div>
+            <div class="project-name">Azure Commercial Tower</div>
+            <div class="project-location">Dubai, UAE</div>
+          </div>
+          <div class="project-arrow"><i class="fas fa-arrow-up-right"></i></div>
+        </div>
+
+        <div class="project-card reveal" data-category="interior">
+          <img src="assets/images/project-interior.png" alt="The Onyx Penthouse interior visualization">
+          <div class="project-info">
+            <div class="project-category">Interior</div>
+            <div class="project-name">The Onyx Penthouse</div>
+            <div class="project-location">London, UK</div>
+          </div>
+          <div class="project-arrow"><i class="fas fa-arrow-up-right"></i></div>
+        </div>
+
+        <div class="project-card reveal" data-category="cultural">
+          <img src="assets/images/project-museum.png" alt="Meridian Arts Museum render">
+          <div class="project-info">
+            <div class="project-category">Cultural</div>
+            <div class="project-name">Meridian Arts Museum</div>
+            <div class="project-location">Toronto, Canada</div>
+          </div>
+          <div class="project-arrow"><i class="fas fa-arrow-up-right"></i></div>
+        </div>
+
+        <div class="project-card featured reveal" data-category="residential">
+          <img src="assets/images/project-eco.png" alt="Verde Living Complex rendering">
+          <div class="project-info">
+            <div class="project-category">Residential</div>
+            <div class="project-name">Verde Living Complex</div>
+            <div class="project-location">Islamabad, Pakistan</div>
+          </div>
+          <div class="project-arrow"><i class="fas fa-arrow-up-right"></i></div>
+        </div>
+
+        <div class="project-card reveal" data-category="hospitality">
+          <img src="assets/images/project-resort.png" alt="Coral Bay Resort rendering">
+          <div class="project-info">
+            <div class="project-category">Hospitality</div>
+            <div class="project-name">Coral Bay Resort</div>
+            <div class="project-location">Maldives</div>
+          </div>
+          <div class="project-arrow"><i class="fas fa-arrow-up-right"></i></div>
+        </div>
+
+        <div class="project-card reveal" data-category="residential">
+          <img src="assets/images/project-residential.png" alt="Casa Blanca Villa rendering">
+          <div class="project-info">
+            <div class="project-category">Residential</div>
+            <div class="project-name">Casa Blanca Villa</div>
+            <div class="project-location">Lahore, Pakistan</div>
+          </div>
+          <div class="project-arrow"><i class="fas fa-arrow-up-right"></i></div>
+        </div>
+
+        <div class="project-card featured reveal" data-category="commercial">
+          <img src="assets/images/project-office.png" alt="Nexus Corporate HQ rendering">
+          <div class="project-info">
+            <div class="project-category">Commercial</div>
+            <div class="project-name">Nexus Corporate HQ</div>
+            <div class="project-location">Riyadh, Saudi Arabia</div>
+          </div>
+          <div class="project-arrow"><i class="fas fa-arrow-up-right"></i></div>
+        </div>
+
+        <div class="project-card reveal" data-category="residential">
+          <img src="assets/images/hero-render.png" alt="Serenity Villas rendering">
+          <div class="project-info">
+            <div class="project-category">Residential</div>
+            <div class="project-name">Serenity Villas</div>
+            <div class="project-location">Karachi, Pakistan</div>
+          </div>
+          <div class="project-arrow"><i class="fas fa-arrow-up-right"></i></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section" style="background:var(--bg-secondary);text-align:center">
+    <div class="container reveal">
+      <div class="section-tag" style="justify-content:center">Have a Project in Mind?</div>
+      <h2 class="section-title" style="max-width:600px;margin:0 auto 1.5rem">Let's Create Something Extraordinary Together</h2>
+      <p class="section-desc" style="margin:0 auto 2.5rem;text-align:center">We'd love to hear about your next project and bring your vision to life.</p>
+      <a href="contact.html" class="btn-primary">Get In Touch <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo">DAS<span>Design Aura Studio</span></div>
+          <p>Transforming architectural visions into stunning photorealistic 3D renderings for clients worldwide.</p>
+        </div>
+        <div class="footer-col"><h4>Navigation</h4><a href="index.html">Home</a><a href="work.html">Work</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+        <div class="footer-col"><h4>Services</h4><a href="#">3D Rendering</a><a href="#">Model Design</a><a href="#">Walkthroughs</a><a href="#">VR Tours</a></div>
+        <div class="footer-col"><h4>Connect</h4><a href="#">info@designaura.studio</a><a href="#">+92 300 1234567</a><a href="#">Islamabad, Pakistan</a></div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Design Aura Studio. All rights reserved.</span>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Behance"><i class="fab fa-behance"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -3,203 +3,220 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Forma Studio — Architecture & Design</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <title>DAS — Design Aura Studio | 3D Architectural Visualization</title>
+  <meta name="description" content="Design Aura Studio specializes in photorealistic 3D architectural rendering, visualization, and model design for international and local projects.">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-  <header class="header">
-    <nav class="nav container">
-      <a href="#" class="logo">Forma Studio</a>
-      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-        <span></span>
-        <span></span>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-logo">DAS</div>
+  </div>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="work.html">Work</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">DAS<span>Design Aura Studio</span></a>
+      <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <a href="contact.html" class="nav-cta">Start a Project</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
       </button>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    </div>
+  </nav>
 
-  <main>
-    <section class="hero">
-      <div class="hero-bg"></div>
-      <div class="hero-content container">
-        <p class="hero-label">Architecture & Interior Design</p>
-        <h1>Spaces shaped by light, form, and purpose</h1>
-        <p class="hero-text">
-          We design thoughtful environments — from private residences to commercial landmarks — 
-          where structure meets soul.
-        </p>
-        <div class="hero-actions">
-          <a href="#projects" class="btn btn-primary">View Our Work</a>
-          <a href="#contact" class="btn btn-outline">Start a Project</a>
-        </div>
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="assets/images/hero-render.png" alt="Luxury villa 3D architectural rendering by DAS">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="hero-tag">Architecture &bull; Visualization &bull; Design</div>
+      <h1>Crafting Spaces That <span class="highlight">Inspire</span></h1>
+      <p class="hero-desc">We transform architectural visions into stunning photorealistic 3D renderings and design models — bridging imagination and reality for clients worldwide.</p>
+      <div class="hero-btns">
+        <a href="work.html" class="btn-primary">View Our Work <i class="fas fa-arrow-right"></i></a>
+        <a href="contact.html" class="btn-outline">Get In Touch</a>
       </div>
-      <div class="hero-scroll">
-        <span>Scroll</span>
-        <div class="scroll-line"></div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-num">120+</div>
+        <div class="stat-label">Projects Delivered</div>
       </div>
-    </section>
+      <div class="stat-item">
+        <div class="stat-num">15+</div>
+        <div class="stat-label">Countries</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">8+</div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
 
-    <section id="about" class="about section">
-      <div class="container about-grid">
-        <div class="about-image">
-          <div class="image-frame"></div>
-        </div>
-        <div class="about-content">
-          <p class="section-label">About Us</p>
-          <h2>Designing with intention since 2008</h2>
-          <p>
-            Forma Studio is a boutique architecture practice dedicated to creating spaces 
-            that feel timeless yet distinctly modern. We believe great design begins with 
-            listening — to the site, the client, and the way people truly live.
-          </p>
-          <ul class="stats">
-            <li>
-              <strong>120+</strong>
-              <span>Projects Completed</span>
-            </li>
-            <li>
-              <strong>18</strong>
-              <span>Design Awards</span>
-            </li>
-            <li>
-              <strong>12</strong>
-              <span>Countries</span>
-            </li>
-          </ul>
-        </div>
+  <!-- Featured Projects -->
+  <section class="section" id="featured">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Selected Work</div>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-desc">A curated selection of our most impactful 3D renderings and architectural visualizations from around the globe.</p>
       </div>
-    </section>
-
-    <section id="services" class="services section">
-      <div class="container">
-        <p class="section-label">What We Do</p>
-        <h2>Our Services</h2>
-        <div class="services-grid">
-          <article class="service-card">
-            <span class="service-num">01</span>
-            <h3>Residential Design</h3>
-            <p>Custom homes and renovations tailored to your lifestyle, from concept sketches to final build.</p>
-          </article>
-          <article class="service-card">
-            <span class="service-num">02</span>
-            <h3>Commercial Architecture</h3>
-            <p>Offices, retail, and hospitality spaces that elevate brand identity and user experience.</p>
-          </article>
-          <article class="service-card">
-            <span class="service-num">03</span>
-            <h3>Interior Design</h3>
-            <p>Material palettes, furniture curation, and lighting plans that complete every detail.</p>
-          </article>
-          <article class="service-card">
-            <span class="service-num">04</span>
-            <h3>Urban Planning</h3>
-            <p>Master plans and landscape integration for communities built to last generations.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class="projects section">
-      <div class="container">
-        <p class="section-label">Portfolio</p>
-        <h2>Selected Projects</h2>
-        <div class="projects-grid">
-          <article class="project-card project-card--large">
-            <div class="project-image project-image--1"></div>
-            <div class="project-info">
-              <span>Residential</span>
-              <h3>Cliffside Residence</h3>
-              <p>Malibu, California</p>
-            </div>
-          </article>
-          <article class="project-card">
-            <div class="project-image project-image--2"></div>
-            <div class="project-info">
-              <span>Commercial</span>
-              <h3>Harbor Office Tower</h3>
-              <p>Copenhagen, Denmark</p>
-            </div>
-          </article>
-          <article class="project-card">
-            <div class="project-image project-image--3"></div>
-            <div class="project-info">
-              <span>Interior</span>
-              <h3>Atelier Gallery</h3>
-              <p>Tokyo, Japan</p>
-            </div>
-          </article>
-          <article class="project-card">
-            <div class="project-image project-image--4"></div>
-            <div class="project-info">
-              <span>Urban</span>
-              <h3>Riverside Commons</h3>
-              <p>Portland, Oregon</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact section">
-      <div class="container contact-grid">
-        <div class="contact-content">
-          <p class="section-label">Get in Touch</p>
-          <h2>Let's build something remarkable</h2>
-          <p>
-            Whether you're planning a new home or reimagining a commercial space, 
-            we'd love to hear about your vision.
-          </p>
-          <address class="contact-details">
-            <p><strong>Studio</strong><br>42 Design Avenue, Suite 300<br>New York, NY 10001</p>
-            <p><strong>Email</strong><br><a href="mailto:hello@formastudio.com">hello@formastudio.com</a></p>
-            <p><strong>Phone</strong><br><a href="tel:+12125551234">+1 (212) 555-1234</a></p>
-          </address>
-        </div>
-        <form class="contact-form" action="#" method="post">
-          <div class="form-row">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required placeholder="Your name">
+      <div class="projects-grid">
+        <div class="project-card featured reveal">
+          <img src="assets/images/project-tower.png" alt="Azure Commercial Tower 3D rendering">
+          <div class="project-info">
+            <div class="project-category">Commercial</div>
+            <div class="project-name">Azure Commercial Tower</div>
+            <div class="project-location">Dubai, UAE</div>
           </div>
-          <div class="form-row">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required placeholder="you@email.com">
+          <div class="project-arrow"><i class="fas fa-arrow-up-right"></i></div>
+        </div>
+        <div class="project-card reveal reveal-delay-1">
+          <img src="assets/images/project-interior.png" alt="Penthouse interior visualization">
+          <div class="project-info">
+            <div class="project-category">Interior</div>
+            <div class="project-name">The Onyx Penthouse</div>
+            <div class="project-location">London, UK</div>
           </div>
-          <div class="form-row">
-            <label for="project">Project Type</label>
-            <select id="project" name="project">
-              <option value="">Select a service</option>
-              <option value="residential">Residential Design</option>
-              <option value="commercial">Commercial Architecture</option>
-              <option value="interior">Interior Design</option>
-              <option value="urban">Urban Planning</option>
-            </select>
+          <div class="project-arrow"><i class="fas fa-arrow-up-right"></i></div>
+        </div>
+        <div class="project-card reveal reveal-delay-2">
+          <img src="assets/images/project-museum.png" alt="Contemporary museum architectural render">
+          <div class="project-info">
+            <div class="project-category">Cultural</div>
+            <div class="project-name">Meridian Arts Museum</div>
+            <div class="project-location">Toronto, Canada</div>
           </div>
-          <div class="form-row">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4" required placeholder="Tell us about your project..."></textarea>
+          <div class="project-arrow"><i class="fas fa-arrow-up-right"></i></div>
+        </div>
+        <div class="project-card featured reveal">
+          <img src="assets/images/project-eco.png" alt="Eco-friendly residential complex rendering">
+          <div class="project-info">
+            <div class="project-category">Residential</div>
+            <div class="project-name">Verde Living Complex</div>
+            <div class="project-location">Islamabad, Pakistan</div>
           </div>
-          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
-        </form>
+          <div class="project-arrow"><i class="fas fa-arrow-up-right"></i></div>
+        </div>
       </div>
-    </section>
-  </main>
+      <div style="text-align:center; margin-top:3rem;" class="reveal">
+        <a href="work.html" class="btn-outline">View All Projects <i class="fas fa-arrow-right" style="margin-left:.5rem"></i></a>
+      </div>
+    </div>
+  </section>
 
+  <!-- Services -->
+  <section class="section" style="background:var(--bg-secondary)">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">What We Do</div>
+        <h2 class="section-title">Our Services</h2>
+        <p class="section-desc">End-to-end visualization solutions that bring architectural concepts to life with precision and artistry.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fas fa-cube"></i></div>
+          <h3>3D Architectural Rendering</h3>
+          <p>Photorealistic exterior and interior visualizations that capture every material, light, and texture with cinematic quality.</p>
+        </div>
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-icon"><i class="fas fa-vector-square"></i></div>
+          <h3>Architectural Model Design</h3>
+          <p>Detailed 3D models with precise geometry, structural accuracy, and design-ready outputs for presentations and approvals.</p>
+        </div>
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-icon"><i class="fas fa-film"></i></div>
+          <h3>Walkthrough Animation</h3>
+          <p>Immersive cinematic flythrough and walkthrough animations that let clients experience spaces before they are built.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fas fa-compass-drafting"></i></div>
+          <h3>Concept Development</h3>
+          <p>From initial sketches to fully realized visual concepts — we collaborate closely to shape your architectural vision.</p>
+        </div>
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-icon"><i class="fas fa-vr-cardboard"></i></div>
+          <h3>Virtual Reality Tours</h3>
+          <p>Step inside your project with interactive VR experiences, offering a true sense of scale, proportion, and spatial flow.</p>
+        </div>
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-icon"><i class="fas fa-city"></i></div>
+          <h3>Master Planning</h3>
+          <p>Large-scale site visualizations and urban planning renders that communicate the full scope of development projects.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section" style="text-align:center">
+    <div class="container reveal">
+      <div class="section-tag" style="justify-content:center">Let's Collaborate</div>
+      <h2 class="section-title" style="max-width:700px;margin:0 auto 1.5rem">Ready to Bring Your Vision to Life?</h2>
+      <p class="section-desc" style="margin:0 auto 2.5rem;text-align:center">Whether it's a residential concept or a large-scale commercial development, we're here to create visuals that captivate and convince.</p>
+      <a href="contact.html" class="btn-primary">Start Your Project <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer class="footer">
-    <div class="container footer-inner">
-      <a href="#" class="logo">Forma Studio</a>
-      <p>&copy; 2026 Forma Studio. All rights reserved.</p>
-      <div class="footer-social">
-        <a href="#" aria-label="Instagram">Instagram</a>
-        <a href="#" aria-label="LinkedIn">LinkedIn</a>
-        <a href="#" aria-label="Pinterest">Pinterest</a>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo">DAS<span>Design Aura Studio</span></div>
+          <p>Transforming architectural visions into stunning photorealistic 3D renderings for clients worldwide.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <a href="index.html">Home</a>
+          <a href="work.html">Work</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <a href="#">3D Rendering</a>
+          <a href="#">Model Design</a>
+          <a href="#">Walkthroughs</a>
+          <a href="#">VR Tours</a>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <a href="#">info@designaura.studio</a>
+          <a href="#">+92 300 1234567</a>
+          <a href="#">Islamabad, Pakistan</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Design Aura Studio. All rights reserved.</span>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Behance"><i class="fab fa-behance"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+        </div>
       </div>
     </div>
   </footer>
